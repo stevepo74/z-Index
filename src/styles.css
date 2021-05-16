@@ -1,0 +1,51 @@
+/*The z-index CSS property sets the z-order of
+ a positioned element and its descendants or 
+ flex items. Overlapping elements with a larger 
+ z-index cover those with a smaller one.*/
+
+body {
+  font-family: sans-serif;
+  background-color: lightgreen;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.first-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 60px;
+}
+
+.second-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: lightblue;
+  position: absolute;
+  top: 120px;
+  z-index: -1;
+}
+
+.third-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: rgb(4, 4, 88);
+  top: 180px;
+  position: absolute;
+  z-index: -2;
+}
+
+.fourth-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  background-color: rgb(1, 1, 26);
+  top: 240px;
+  position: absolute;
+  z-index: -3;
+}
